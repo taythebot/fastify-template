@@ -3,7 +3,7 @@ FROM node:14-alpine
 # Set user
 USER node
 
-# Create work dri
+# Create app directory
 WORKDIR /app
 
 # Copy package.son
