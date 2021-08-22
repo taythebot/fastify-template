@@ -18,6 +18,7 @@ are explained below.
   * Internal error codes
   * Override request schema errors
   * Works with [vee-validate](https://vee-validate.logaretm.com/v4/) out of the box
+* Prettier formatting
 
 ## Quick Start
 1. Clone repository

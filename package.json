@@ -11,6 +11,7 @@
   "author": "taythebot",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "fastify": "^3.0.0",
     "fastify-autoload": "^3.0.2",
     "fastify-cli": "^2.5.1",
@@ -23,6 +24,7 @@
     "statuses": "^2.0.1"
   },
   "devDependencies": {
+    "prettier": "^2.3.2",
     "tap": "^14.0.0"
   }
 }
