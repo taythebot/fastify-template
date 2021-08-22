@@ -13,6 +13,10 @@ are explained below.
 * `.env` file support
 * Class based service model
 * Version based routing
+* Improved error handling
+  * Human friendly format
+  * Internal error codes
+  * Override request schema errors
 
 ## Quick Start
 1. Clone repository
