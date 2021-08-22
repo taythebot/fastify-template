@@ -3,8 +3,9 @@ FROM node:14-alpine
 # Set user
 USER node
 
-# Copy package.son
-COPY package*.json ./
+# Copy package.json and yarn.lock
+COPY package.json ./
+COPY yarn.lock ./
 
 # Install modules
 RUN npm install -only=prod
