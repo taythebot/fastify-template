@@ -116,7 +116,7 @@ throw fastify.validationError({ name: 'name is incorrect' })
     "status": 400,
     "code": 1000,
     "message": {
-      "name": "ok"
+      "name": "name is incorrect"
     }
   }
 }
