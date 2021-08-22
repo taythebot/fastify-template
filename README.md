@@ -70,7 +70,7 @@ Object Keys
 * Message - Error message
 
 You can add custom error codes in [errors.js](plugins/errors.js) and pass it via the `code` key when throwing an error.
-You can see an example at [services/user.js](services/user.js).
+You can see an example at [services/users.js](services/user.js).
 
 ```json
 {
@@ -167,7 +167,7 @@ Models are automatically synced when `process.env.NODE_ENV` is equal to `develop
 const { sequelize } = fastify
 const user = await sequelize.users.findOne({ where: { username: 'admin' } })
 ```
-You can see additional examples at [services/user.js](services/user.js).
+You can see additional examples at [services/users.js](services/user.js).
 
 #### Notes
 * Default connector is Postgresql
