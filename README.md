@@ -152,7 +152,7 @@ Express, this isn't a problem because after validation the result is handed to t
 handles this error for you and your request won't even reach your controller.
 
 ### [Sequelize](plugins/sequelize.js)
-This plugin initializes Sequelize and loads in your models. The models are loaded from the `models` folder. It makes
+This plugin initializes Sequelize and loads in your models. The models are loaded from the `models` folder.
 
 #### Accessing Sequelize
 Sequelize available to the application via `sequelize`. Native sequelize functions such as `transaction`
