@@ -155,7 +155,7 @@ handles this error for you and your request won't even reach your controller.
 This plugin initializes Sequelize and loads in your models. The models are loaded from the `models` folder.
 
 #### Accessing Sequelize
-Sequelize available to the application via `sequelize`. Native sequelize functions such as `transaction`
+Sequelize is available to the application via `sequelize`. Native sequelize functions such as `transaction`
 can be access via `sequelize.sequelize.<method>`.
 
 #### Syncing Models
