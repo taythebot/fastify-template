@@ -24,16 +24,20 @@ are explained below.
 ```
 git clone https://github.com/taythebot/fastify-template.git
 ```
-2. Set values in `.env`
-3. Run Sequelize seeds
+2. Install node modules
+ ```
+ npm install or yarn install
+ ```
+3. Set values in `.env`
+4. Run Sequelize seeds
 ```
 sequelize db:seed:all
 ```
-4. Start Fastify
+5. Start Fastify
 ```
 npm run dev
 ```
-5. Visit http://localhost:3000
+6. Visit http://localhost:3000
 
 Test Routes:
 - GET http://localhost:3000/v1/users
