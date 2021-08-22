@@ -1,6 +1,6 @@
-"use strict";
+'use strict'
 
-const fp = require("fastify-plugin");
+const fp = require('fastify-plugin')
 
 module.exports = fp(
   async (fastify, _) => {
@@ -13,25 +13,27 @@ module.exports = fp(
         },
         abortEarly: false,
         stripUnknown: true,
-      });
-      if (!error) return { value };
+      })
+      if (!error) {
+        return { value }
+      }
 
       // Create Error
-      const err = new Error();
-      err.status = 400;
-      err.code = "ValidationError";
+      const err = new Error()
+      err.status = 400
+      err.code = 'ValidationError'
 
       // Inject where error occurred
-      err.message = error.details;
-      err.location = httpPart;
+      err.message = error.details
+      err.location = httpPart
 
       // Return error
-      return { error: err };
-    });
+      return { error: err }
+    })
   },
   {
-    fastify: "3.x",
-    name: "plugin-validator",
-    dependencies: ["plugin-errors"],
+    fastify: '3.x',
+    name: 'plugin-validator',
+    dependencies: ['plugin-errors'],
   }
-);
+)

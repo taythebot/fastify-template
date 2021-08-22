@@ -96,13 +96,17 @@ module.exports = fp(
         } else if (!body.message && err.message) {
           body.message = err.message
 
-          if (err.status) body.status = err.status
+          if (err.status) {
+            body.status = err.status
+          }
         }
       }
 
       // Output to console if development or server error
       if (process.env.NODE_ENV === 'development' || body.status >= 500) {
-        if (!err.message) err.message = body.message
+        if (!err.message) {
+          err.message = body.message
+        }
         req.log.error(err)
       }
 

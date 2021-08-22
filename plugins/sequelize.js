@@ -57,8 +57,9 @@ module.exports = fp(
     db.Sequelize = Sequelize
 
     // Sync models in development
-    if (process.env.NODE_ENV === 'development')
+    if (process.env.NODE_ENV === 'development') {
       await sequelize.sync({ alter: true })
+    }
 
     // Make sequelize available to entire application
     fastify.decorate('sequelize', db)
