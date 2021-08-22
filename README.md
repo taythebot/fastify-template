@@ -143,7 +143,7 @@ fastify.get(
 
 #### Why the hell would you make this? Doesn't Fastify already handle errors for you?
 The situation above is something everyone has come across while making a web application. Normally in frameworks like
-Express, this isn't a problem because after validation, the result is handed to the controller. However Fastify
+Express, this isn't a problem because after validation the result is handed to the controller. However Fastify
 handles this error for you and your request won't even reach your controller.
 
 ### [Sequelize](plugins/sequelize.js)
