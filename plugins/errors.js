@@ -16,13 +16,16 @@ const codes = {
   },
 }
 
-const parseMessage = (message) =>
-  Array.isArray(message)
-    ? message.reduce(
-        (obj, curr) => ({ ...obj, [curr.path[0]]: curr.message }),
-        {}
-      )
-    : message
+const parseMessage = (message) => {
+  if (Array.isArray(message)) {
+    return message.reduce(
+      (obj, curr) => ({ ...obj, [curr.path[0]]: curr.message }),
+      {}
+    )
+  } else {
+    return message
+  }
+}
 
 module.exports = fp(
   async (fastify, _) => {
