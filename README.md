@@ -19,6 +19,7 @@ are explained below.
   * Override request schema errors
   * Works with [vee-validate](https://vee-validate.logaretm.com/v4/) out of the box
 * Prettier formatting
+* [Docker Support](Dockerfile)
 
 ## Quick Start
 1. Clone repository
