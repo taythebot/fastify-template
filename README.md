@@ -4,7 +4,7 @@ be useful for others if I shared my setup. This template includes some custom pl
 are explained below.
 
 ## Features
-* Usage of Fastify cli
+* Usage of Fastify cli and autoload
 * [Sequelize](https://sequelize.org/) (Postgresql by default)
 * [Joi Validator](https://joi.dev/) (Only used for request schema)
 * Custom Joi Validator functions
