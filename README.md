@@ -46,7 +46,7 @@ Test Routes:
 
 ## Table of Content
 I got a bit carried away with my explanations below. You don't have to read them to use this template, but it'll help
-in understanding why I design it this way.
+in understanding why I designed it this way.
 
 * Errors
 * Sequelize
